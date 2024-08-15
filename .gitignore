@@ -10,7 +10,3 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-tests/__pycache__/*.pyc
-tests/
-tests/*.pyo
-tests/*$py.class
