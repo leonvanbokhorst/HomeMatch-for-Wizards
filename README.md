@@ -13,21 +13,21 @@ HomeMatch is an innovative application that uses advanced AI techniques to help 
 
 ## Installation
 
-1. Clone the repository:
+- Clone the repository:
 
 ```bash
 git clone https://github.com/your-username/homematch.git
 cd homematch
 ```
 
-2. Create and activate a virtual environment:
+- Create and activate a virtual environment:
 
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows, use venv\Scripts\activate
 ```
 
-3. Install the required packages:
+- Install the required packages:
 
 ```bash
 pip install -r requirements.txt
@@ -47,7 +47,7 @@ To run the HomeMatch application:
 python app.py
 ```
 
-This will start the Streamlit app. Open your web browser and navigate to the URL provided in the terminal (usually http://localhost:8501).
+This will start the Streamlit app. Open your web browser and navigate to the URL provided in the terminal (usually <http://localhost:8501>).
 
 ## Project Structure
 
