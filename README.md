@@ -45,7 +45,7 @@ This will start the Streamlit app. Open your web browser and navigate to the URL
 
 ## Project Structure
 
-```
+```ascii
 homematch/
 ├── src/
 │   ├── data_generation/
@@ -59,7 +59,6 @@ homematch/
 │   ├── test_semantic_search.py
 │   └── test_personalization.py
 ├── requirements.txt
-├── setup.py
 ├── README.md
 └── app.py
 ```
