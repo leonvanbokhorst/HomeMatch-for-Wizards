@@ -1,5 +1,5 @@
 import pytest
-from src.vector_store.vector_store import VectorStore
+from src.semantic_search.vector_store import VectorStore
 from langchain.schema import Document
 
 
@@ -23,7 +23,7 @@ def test_add_and_search_listings(vector_store):
     ]
     vector_store.add_listings(listings)
 
-    results = vector_store.search("cottage in the woods", filter_dict=None, k=1)
+    results = vector_store.search("cottage in the woods", k=1)
     assert len(results) == 1
     assert "cozy cottage" in results[0].page_content
 
@@ -35,8 +35,6 @@ def test_filter_search_results(vector_store):
     ]
     vector_store.add_listings(listings)
 
-    results = vector_store.search(
-        "cottage", filter_dict={"price": {"$lt": 150000}}, k=1
-    )
+    results = vector_store.search("cottage", filter={"price": {"$lt": 150000}}, k=1)
     assert len(results) == 1
     assert results[0].metadata["price"] == 100000

@@ -16,5 +16,5 @@ class VectorStore:
     def add_listings(self, listings: List[Dict]):
         self.vectorstore.add_documents(listings)
 
-    def search(self, query: str, filter_dict: Dict, k: int = 5) -> List[Document]:
-        return self.vectorstore.similarity_search(query, k=k, filter=filter_dict)
+    def search(self, query: str, filter: Dict = None, k: int = 5) -> List[Document]:
+        return self.vectorstore.similarity_search(query, k=k, filter=filter)
