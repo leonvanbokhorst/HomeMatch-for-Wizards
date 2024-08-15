@@ -49,10 +49,10 @@ echo "OPEN_AI_API_KEY=<your-api-key>" > .env
 
 ## Usage
 
-To run the HomeMatch application:
+To run the HomeMatch application, open a terminal and run the following command:
 
 ```bash
-python HomeMatch.py
+streamlit run HomeMatch.py
 ```
 
 This will start the Streamlit app. Open your web browser and navigate to the URL provided in the terminal (usually <http://localhost:8501>).
