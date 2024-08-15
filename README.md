@@ -66,7 +66,8 @@ homematch/
 │   └── test_personalization.py
 ├── requirements.txt
 ├── README.md
-└── app.py
+└── HomeMatch.py
+└── HomeMatch.ipynb
 ```
 
 - `src/`: Contains the main components of the application
@@ -77,7 +78,8 @@ homematch/
   - `ui/`: Streamlit-based user interface
 - `tests/`: Unit tests for each component
 - `requirements.txt`: List of Python dependencies
-- `app.py`: Script to run the Streamlit app
+- `HomeMatch.py`: Script to run the Streamlit app
+- `HomeMatch.ipynb`: Jupyter notebook for exploring the application components
 
 ## Contributing
 
