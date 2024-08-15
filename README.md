@@ -1,5 +1,13 @@
 # HomeMatch: Magical Real Estate Finder
 
+[![RunTests](https://github.com/leonvanbokhorst/HomeMatch-for-Wizards/actions/workflows/python-app.yml/badge.svg)](https://github.com/leonvanbokhorst/HomeMatch-for-Wizards/actions/workflows/python-app.yml)
+[![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/release/python-3100/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/leonvanbokhorst/homematch/main/HomeMatch.py)
+[![OpenAI](https://img.shields.io/badge/OpenAI-API-08B9D1.svg)](https://platform.openai.com/docs/guides/)
+[![ChromaDB](https://img.shields.io/badge/ChromaDB-local-08B9D1.svg)](https://chromadb.com/docs/guides/)
+
 HomeMatch is an innovative application that uses advanced AI techniques to help wizards and witches find their perfect magical dwelling. It leverages Large Language Models (LLMs) and vector databases to create personalized property searches and enchanting descriptions.
 
 ![Mr. Sneekers](homematch-sneaky-salesperson.webp)
