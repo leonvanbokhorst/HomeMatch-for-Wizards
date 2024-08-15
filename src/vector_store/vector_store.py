@@ -14,16 +14,7 @@ class VectorStore:
         )
 
     def add_listings(self, listings: List[Dict]):
-        documents = []
-        for listing in listings:
-            content = f"{listing['description']} {listing['neighborhood_description']}"
-            metadata = {
-                k: v
-                for k, v in listing.items()
-                if k not in ["description", "neighborhood_description"]
-            }
-            documents.append(Document(page_content=content, metadata=metadata))
-        self.vectorstore.add_documents(documents)
+        self.vectorstore.add_documents(listings)
 
-    def search(self, query: str, k: int = 5) -> List[Document]:
-        return self.vectorstore.similarity_search(query, k=k)
+    def search(self, query: str, filter_dict: Dict, k: int = 5) -> List[Document]:
+        return self.vectorstore.similarity_search(query, k=k, filter=filter_dict)
