@@ -18,7 +18,7 @@ def test_generate_description(description_generator):
     }
     user_preferences = "I'm looking for a cozy home near nature."
 
-    personalized_description = description_generator.generate_description(
+    personalized_description = description_generator.get_offer(
         listing, user_preferences
     )
 

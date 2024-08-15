@@ -17,5 +17,8 @@ class VectorStore:
             persist_directory=persist_directory,
         )
 
+    def add_listings(self, listings: List[Document]):
+        self.vectorstore.add_documents(listings)
+
     def search(self, query: str, filter: Dict = None, k: int = 3) -> List[Document]:
         return self.vectorstore.similarity_search(query, k=k, filter=filter)
