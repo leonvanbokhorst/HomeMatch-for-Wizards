@@ -57,38 +57,6 @@ python HomeMatch.py
 
 This will start the Streamlit app. Open your web browser and navigate to the URL provided in the terminal (usually <http://localhost:8501>).
 
-## Project Structure
-
-```ascii
-homematch/
-├── src/
-│   ├── data_generation/
-│   ├── vector_store/
-│   ├── semantic_search/
-│   ├── personalization/
-│   └── ui/
-├── tests/
-│   ├── test_data_generation.py
-│   ├── test_vector_store.py
-│   ├── test_semantic_search.py
-│   └── test_personalization.py
-├── requirements.txt
-├── README.md
-└── HomeMatch.py
-└── HomeMatch.ipynb
-```
-
-- `src/`: Contains the main components of the application
-  - `data_generation/`: Modules for generating city contexts and property listings
-  - `vector_store/`: Vector database integration for efficient searching
-  - `semantic_search/`: Semantic search engine implementation
-  - `personalization/`: Personalized description generator
-  - `ui/`: Streamlit-based user interface
-- `tests/`: Unit tests for each component
-- `requirements.txt`: List of Python dependencies
-- `HomeMatch.py`: Script to run the Streamlit app
-- `HomeMatch.ipynb`: Jupyter notebook for exploring the application components
-
 ## Contributing
 
 Contributions are welcome! For major changes, please open an issue first to discuss what you would like to change.
