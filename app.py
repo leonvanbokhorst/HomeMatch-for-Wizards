@@ -1,8 +1,14 @@
 import streamlit as st
-from ..data_generation.city_context_generator import CityContextGenerator
-from ..vector_store.vector_store import VectorStore
-from ..semantic_search.search_engine import SemanticSearchEngine
-from ..personalization.description_generator import PersonalizedDescriptionGenerator
+from src.data_generation.city_context_generator import CityContextGenerator
+from src.vector_store.vector_store import VectorStore
+from src.semantic_search.search_engine import SemanticSearchEngine
+from src.personalization.description_generator import PersonalizedDescriptionGenerator
+from langchain_openai import ChatOpenAI
+import os
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 
 def main():
@@ -10,9 +16,19 @@ def main():
     st.title("🧙‍♂️ HomeMatch: Magical Real Estate Finder")
 
     # Initialize components
+    llm = ChatOpenAI(model_name="gpt-4o-mini", temperature=0.7)
     vector_store = VectorStore("chroma_persist", "homematch_listings")
     search_engine = SemanticSearchEngine(vector_store)
     description_generator = PersonalizedDescriptionGenerator()
+
+    # Sidebar for generating new data (optional)
+    if st.sidebar.button("Generate New Listings"):
+        with st.spinner("Generating new magical listings..."):
+            city_generator = CityContextGenerator(llm)
+            contexts = city_generator.generate_contexts(num_contexts=10)
+            # Here you would generate listings based on these contexts
+            # and add them to your vector store
+            st.sidebar.success("New listings generated!")
 
     # Chat interface
     if "messages" not in st.session_state:
