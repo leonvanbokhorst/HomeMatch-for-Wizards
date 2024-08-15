@@ -5,7 +5,11 @@ from langchain_openai import OpenAIEmbeddings
 
 
 class VectorStore:
-    def __init__(self, persist_directory: str, collection_name: str):
+    def __init__(
+        self,
+        persist_directory: str = "chroma.db",
+        collection_name: str = "homematch_listings_store",
+    ):
         self.embeddings = OpenAIEmbeddings()
         self.vectorstore = Chroma(
             collection_name=collection_name,
@@ -13,8 +17,5 @@ class VectorStore:
             persist_directory=persist_directory,
         )
 
-    def add_listings(self, listings: List[Dict]):
-        self.vectorstore.add_documents(listings)
-
-    def search(self, query: str, filter: Dict = None, k: int = 5) -> List[Document]:
+    def search(self, query: str, filter: Dict = None, k: int = 3) -> List[Document]:
         return self.vectorstore.similarity_search(query, k=k, filter=filter)
