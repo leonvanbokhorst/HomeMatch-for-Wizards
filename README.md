@@ -33,6 +33,12 @@ source venv/bin/activate  # On Windows, use venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
+Get your OpenAI API key from the [OpenAI website](https://platform.openai.com/account/api-keys) and set it as an environment variable in a `.env` file:
+
+```bash
+echo "OPEN_AI_API_KEY=<your-api-key>" > .env
+```
+
 ## Usage
 
 To run the HomeMatch application:
