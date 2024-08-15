@@ -71,7 +71,6 @@ homematch/
   - `ui/`: Streamlit-based user interface
 - `tests/`: Unit tests for each component
 - `requirements.txt`: List of Python dependencies
-- `setup.py`: Package and distribution management
 - `app.py`: Script to run the Streamlit app
 
 ## Contributing
