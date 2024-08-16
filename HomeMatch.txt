@@ -42,8 +42,7 @@ HomeMatch is an innovative application that uses advanced AI techniques to help 
 - `homematch-sneaky-salesperson.webp`: Image of Mr. Sneekrs, the virtual salesperson
 - `pytest.ini`: Configuration file for pytest
 
-
-*Note: The `.github` and `.vscode` directories contain configuration files for GitHub Actions and Visual Studio Code respectively.*
+> Note: The `.github` and `.vscode` directories contain configuration files for GitHub Actions and Visual Studio Code respectively.
 
 ## Technologies
 
