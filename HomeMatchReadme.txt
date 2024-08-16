@@ -1,16 +1,6 @@
 # HomeMatch: Magical Real Estate Finder
 
-[![RunTests](https://github.com/leonvanbokhorst/HomeMatch-for-Wizards/actions/workflows/python-app.yml/badge.svg)](https://github.com/leonvanbokhorst/HomeMatch-for-Wizards/actions/workflows/python-app.yml)
-[![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/release/python-3100/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/leonvanbokhorst/homematch/main/HomeMatch.py)
-[![OpenAI](https://img.shields.io/badge/OpenAI-API-08B9D1.svg)](https://platform.openai.com/docs/guides/)
-[![ChromaDB](https://img.shields.io/badge/ChromaDB-local-08B9D1.svg)](https://chromadb.com/docs/guides/)
-
 HomeMatch is an innovative application that uses advanced AI techniques to help wizards and witches find their perfect magical dwelling. It leverages Large Language Models (LLMs) and vector databases to create personalized property searches and enchanting descriptions.
-
-![HomeMatch screenshot](homematch-app.jpg)
 
 ## Features
 
@@ -32,17 +22,25 @@ HomeMatch is an innovative application that uses advanced AI techniques to help 
   - `test_description_generator.py`: Tests for the description generator
   - `test_vector_store.py`: Tests for the vector store
 - `chroma.db/`: Directory for ChromaDB vector database (generated at runtime)
-- `homematch_listings.json` and `.txt` : JSON file containing generated property listings *(temporary assessment file)*
+- `homematch_listings.json` : JSON file containing generated property listings data
 - `homematch_city_contexts.csv`: CSV file with city context data
-- `homematch_city_contexts.txt`: CSV file with city context data *(temporary assessment file)*
 - `requirements.txt`: List of Python dependencies
 - `README.md`: Project documentation and setup instructions
-- `HomeMatch.txt`: Project documentation and setup instructions *(temporary assessment file)*
 - `homematch-app.jpg`: Screenshot of the application
 - `homematch-sneaky-salesperson.webp`: Image of Mr. Sneekrs, the virtual salesperson
 - `pytest.ini`: Configuration file for pytest
 
 > Note: The `.github` and `.vscode` directories contain configuration files for GitHub Actions and Visual Studio Code respectively.
+
+## Additional Files
+
+To meet specific submission requirements, the following files have been included:
+
+- `HomeMatch.txt`: A plain text version of the README.
+- `homematch_listings.txt`: A plain text version of the property listings data.
+- `homematch_city_contexts.txt`: A plain text version of the city contexts data.
+
+These files contain the same information as their JSON/CSV counterparts but in a plain text format for easier review if needed.
 
 ## Technologies
 
