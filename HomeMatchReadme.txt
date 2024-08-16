@@ -1,6 +1,16 @@
 # HomeMatch: Magical Real Estate Finder
 
+[![RunTests](https://github.com/leonvanbokhorst/HomeMatch-for-Wizards/actions/workflows/python-app.yml/badge.svg)](https://github.com/leonvanbokhorst/HomeMatch-for-Wizards/actions/workflows/python-app.yml)
+[![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/release/python-3100/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/leonvanbokhorst/homematch/main/HomeMatch.py)
+[![OpenAI](https://img.shields.io/badge/OpenAI-API-08B9D1.svg)](https://platform.openai.com/docs/guides/)
+[![ChromaDB](https://img.shields.io/badge/ChromaDB-local-08B9D1.svg)](https://chromadb.com/docs/guides/)
+
 HomeMatch is an innovative application that uses advanced AI techniques to help wizards and witches find their perfect magical dwelling. It leverages Large Language Models (LLMs) and vector databases to create personalized property searches and enchanting descriptions.
+
+![HomeMatch screenshot](homematch-app.jpg)
 
 ## Features
 
@@ -37,20 +47,19 @@ Note: The `.github` and `.vscode` directories contain configuration files for Gi
 To meet specific submission requirements, the following files have been included:
 
 - [`HomeMatchReadme.txt`](HomeMatchReadme.txt): A plain text version of the README.
-- [`homematch_listings.txt`](homematch_listings.txt): A plain text version of the property listings data.
-- [`homematch_city_contexts.txt`](homematch_city_contexts.txt): A plain text version of the city contexts data.
+- [`Listings.txt`](homematch_listings.txt): A plain text version of the property listings data.
 
-These files contain the same information as their JSON/CSV counterparts but in a plain text format for easier review if needed.
+These files contain the same information as their JSON/CSV/md counterparts but in a plain text format for easier review if needed.
 
 - [`screenshot-1.jpg`](screenshot-1.jpg): A screenshot of mr. Sneekrs in conversation to figure out your preferences and find the perfect home.
 - [`screenshot-2.jpg`](screenshot-2.jpg): A screenshot of the personalized listing(s) offer mr. Sneekrs made crafted for the user.
 
 ## Technologies
 
-- **Streamlit**: Open-source app framework for Machine Learning and Data Science projects.
-- **OpenAI API**: Text generation API for creating property descriptions, conversation responses and personalized recommendations.
-- **ChromaDB**: Vector database for similarity search and retrieval of property listings.
-- **Langchain**: Framework for building AI-powered applications.
+- **[Streamlit](https://streamlit.io/)**: Open-source app framework for Machine Learning and Data Science projects.
+- **[OpenAI API](https://openai.com/api/)**: Text generation API for creating property descriptions, conversation responses and personalized recommendations.
+- **[Chroma](https://www.trychroma.com/)**: Vector database for similarity search and retrieval of property listings.
+- **[Langchain](https://www.langchain.com/)**: Framework for building AI-powered applications.
 
 ## Installation
 
