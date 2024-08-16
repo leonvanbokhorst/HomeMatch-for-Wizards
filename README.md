@@ -10,7 +10,7 @@
 
 HomeMatch is an innovative application that uses advanced AI techniques to help wizards and witches find their perfect magical dwelling. It leverages Large Language Models (LLMs) and vector databases to create personalized property searches and enchanting descriptions.
 
-![HomeMatch screenshot](homematch-app.jpg)
+![screenshot-2.jpg](screenshot-2.jpg)
 
 ## Features
 
