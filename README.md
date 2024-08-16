@@ -47,7 +47,7 @@ Note: The `.github` and `.vscode` directories contain configuration files for Gi
 To meet specific submission requirements, the following files have been included:
 
 - [`HomeMatchReadme.txt`](HomeMatchReadme.txt): A plain text version of the README.
-- [`Listings.txt`](homematch_listings.txt): A plain text version of the property listings data.
+- [`Listings.txt`](Listings.txt): A plain text version of the property listings data.
 
 These files contain the same information as their JSON/CSV/md counterparts but in a plain text format for easier review if needed.
 
